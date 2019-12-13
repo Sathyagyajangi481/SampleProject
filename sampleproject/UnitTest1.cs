@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+
 
 namespace sampleproject
 {
@@ -12,7 +12,7 @@ namespace sampleproject
         public void TestMethod1()
         {
 
-            IWebDriver driver = new ChromeDriver();
+            IWebDriver driver = new OpenQA.Selenium.Chrome.ChromeDriver();
 
             driver.Url = "https://www.hockeyindia.org/";
 
